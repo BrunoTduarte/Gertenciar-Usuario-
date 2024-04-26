@@ -12,5 +12,5 @@ class User {
     }
 }
 
-const novoUser = new User( 'juliana', 'j@j.com', '2021-02-09')
-console.log(novoUser)
+// const novoUser = new User( 'j@j.com', 'juliana', '2021-02-09')
+// console.log(novoUser)
