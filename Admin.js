@@ -1,11 +1,14 @@
-import User from 
+import User from "./user.js";
 
 class Admin extends User {
-    constructor(nome, email, nascimento, role = 'admin', ativo = true){
-        super(nome, email, nascimento, role, ativo)
-    }
+  constructor(nome, email, nascimento, role = 'admin', ativo = true) {
+    super(nome, email, nascimento, role, ativo)
+  }
+
+  criarCurso(nomeDoCurso, vagas) {
+    return `Curso de ${nomeDoCurso} criado com ${vagas} vagas`
+  }
 }
 
-const novoAdmin = new Admin ('rodrigo', 'j@j.com', '2029-09-08')
-console.log(novoAdmin)
-console.log(novoAdmin.exibirInfos())
+const novoAdmin = new Admin('Rodrigo', 'r@r.com', '2021-01-01')
+console.log(novoAdmin.criarCurso('JS', 20))
